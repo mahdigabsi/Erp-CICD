@@ -1,0 +1,5 @@
+FROM openjdk:8
+EXPOSE 8089
+ADD target/ERP-0.0.1-SNAPSHOT.jar ERP-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/ERP-0.0.1-SNAPSHOT.jar"]
+
